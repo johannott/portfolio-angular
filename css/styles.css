@@ -1,0 +1,112 @@
+/*  Custom css styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  min-height: 95%;
+  /*background-image: url("../images/IMG_5055.jpg");
+  background-size: cover;
+  background-position: center;*/
+  background-color: #EFEFEF;  /* Gallery */
+}
+
+/* Navbar styles
+-------------------------------------------------- */
+.custom_nav {
+    margin-bottom: 80px;
+}
+
+.custom_nav .navbar {
+    background-color: #35404f;  /* Cloud Burst */
+    border-color: #35404f;  /* Cloud Burst */
+    color: #A3D39C;  /* Chinook */
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #35404f;  /* Cloud Burst */
+}
+
+.navbar-default .navbar-brand {
+    color: #A3D39C;  /* Chinook */
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #A3D39C;  /* Chinook */
+}
+
+
+.navbar-default .navbar-brand:hover {
+    color: #7ACCC8; /* Monte Carlo */
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #7ACCC8;  /* Monte Carlo */
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #A3D39C; /* Chinook */
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #35404f;  /* Cloud Burst */
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #A3D39C; /* Chinook */
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #A3D39C; /* Chinook */
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-list > li{
+  float: left;
+}
+
+.footer-list > li > a{
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  color: #35404f;  /* Cloud Burst */
+}
+
+.footer-list > li > a:hover{
+  color: #EFEFEF;  /* Gallery */
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+
+.container-footer {
+  width: auto;
+  max-width: 480px;
+  padding: 0 15px;
+}
+.container-footer .text-muted {
+  margin: 20px 0;
+}
+
+.container {
+  padding-top: 80
+}
+
+.image {
+  background-image: url(../images/IMG_5055.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
