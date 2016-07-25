@@ -67,6 +67,7 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #A3D39C; /* Chinook */
+  opacity: 0.7;
 }
 
 .footer-list {
@@ -100,8 +101,8 @@ body {
   margin: 20px 0;
 }
 
-.container {
-  padding-top: 80
+.home-column {
+  padding-bottom: 50px;
 }
 
 .image {
@@ -109,4 +110,43 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+
+/* Animated Icons
+-------------------------------------------------- */
+
+#container {
+    width: 152px;
+    float: right;
+    border: 1px #fff solid;
+    height: 50px;
+    overflow: hidden;
+}
+
+.social {
+    text-align: center;
+    transition: all 0.2s, transform 0.2s ease;
+}
+
+.social:hover {
+    transform: translateY(-59%);
+}
+
+.social p {
+    display: block;
+    color: #fff;
+    padding: 2px 0;
+}
+
+.social a {
+    display: inline-block;
+    width: 47.5px;
+    background: url(img/fb.png);
+    height: 50px;
+    transition: all 0.2s ease;
+}
+
+.social a:hover {
+    background: url(img/fb-over.png);
 }

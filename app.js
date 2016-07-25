@@ -53,3 +53,11 @@ portfolioApp.controller('interestsController', ['$scope', function($scope) {
 portfolioApp.controller('contactController', ['$scope', function($scope) {
   $scope.pageClass = 'page-contact';
 }]);
+
+//DIRECTIVES
+portfolioApp.directive('textFiller', function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'directives/text-filler.html'
+  };
+});
