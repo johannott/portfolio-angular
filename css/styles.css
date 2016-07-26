@@ -8,10 +8,8 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   min-height: 95%;
-  /*background-image: url("../images/IMG_5055.jpg");
-  background-size: cover;
-  background-position: center;*/
-  background-color: #EFEFEF;  /* Gallery */
+  background-image: url("../images/cheap_diagonal_fabric.png");
+  color: #35404f;
 }
 
 /* Navbar styles
@@ -66,8 +64,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #A3D39C; /* Chinook */
-  opacity: 0.7;
+  background-color: rgba(122,204,200, 0.3); /* Chinook */
 }
 
 .footer-list {
@@ -103,6 +100,7 @@ body {
 
 .home-column {
   padding-bottom: 50px;
+  text-align: center;
 }
 
 .image {
@@ -112,6 +110,21 @@ body {
   background-repeat: no-repeat;
 }
 
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 132px;
+  height: 132px;
+  padding: 5px;
+  border: 1px solid #dedede;
+  border-radius: 50%;
+}
 
 /* Animated Icons
 -------------------------------------------------- */
