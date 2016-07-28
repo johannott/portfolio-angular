@@ -22,6 +22,8 @@ h1, h2, h3, a {
 
 p {
 	font-family: 'Lekton', Helvetica, Arial, sans-serif;
+  text-align: justify;
+  padding-bottom: 20px;
 }
 
 /* Navbar styles
@@ -119,14 +121,20 @@ p {
 
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  min-height: 88vh; /* These two lines are counted as one :-)       */
   background-color: #FFF;  /* Gallery */
   display: flex;
   align-items: center;
 }
 
+.overall-scope {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+}
 
-/* Custom page CSS
+
+/* Home page CSS
 -------------------------------------------------- */
 
 .home-column {
