@@ -55,9 +55,9 @@ portfolioApp.controller('contactController', ['$scope', function($scope) {
 }]);
 
 //DIRECTIVES
-portfolioApp.directive('textFiller', function() {
+portfolioApp.directive('joFooter', function() {
   return {
     restrict: 'E',
-    templateUrl: 'directives/text-filler.html'
+    templateUrl: 'directives/footer.html'
   };
 });

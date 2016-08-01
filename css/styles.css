@@ -46,10 +46,13 @@ p {
     color: #A3D39C;  /* Chinook */
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a{
     color: #A3D39C;  /* Chinook */
 }
 
+.navbar-default .navbar-nav>li>a:focus{
+    color: #A3D39C;  /* Chinook */
+}
 
 .navbar-default .navbar-brand:hover {
     color: #7ACCC8; /* Monte Carlo */
@@ -70,19 +73,17 @@ p {
     background-color: #A3D39C; /* Chinook */
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: rgba(122,204,200, 0.3); /* Chinook */
+.nav i {
+  padding-right: 5px;
 }
+
+/* Footer styles
+-------------------------------------------------- */
 
 .footer-list {
   list-style: none;
+  padding-left: 0;
+  display: inline-block;
 }
 
 .footer-list > li{
@@ -97,7 +98,7 @@ p {
 }
 
 .footer-list > li > a:hover{
-  color: #EFEFEF;  /* Gallery */
+  color: #7ACCC8;  /* Monte Carlo */
 }
 
 /* Custom page CSS
