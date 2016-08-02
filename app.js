@@ -40,6 +40,36 @@ portfolioApp.controller('homeController', ['$scope', function($scope) {
 
 portfolioApp.controller('skillsController', ['$scope', function($scope) {
   $scope.pageClass = 'page-skills';
+
+  $scope.class1 = "box-1";
+  $scope.class2 = "box-2";
+  $scope.class3 = "box-3";
+  $scope.class4 = "box-4";
+    $scope.changeClass1= function(){
+      if ($scope.class1 === "box-1")
+        $scope.class1 = "big-box-1";
+      else
+        $scope.class1 = "box-1";
+    };
+    $scope.changeClass2 = function(){
+      if ($scope.class2 === "box-2")
+        $scope.class2 = "big-box-2";
+      else
+        $scope.class2 = "box-2";
+    };
+    $scope.changeClass3 = function(){
+      if ($scope.class3 === "box-3")
+        $scope.class3 = "big-box-3";
+      else
+        $scope.class3 = "box-3";
+    };
+    $scope.changeClass4 = function(){
+      if ($scope.class4 === "box-4")
+        $scope.class4 = "big-box-4";
+      else
+        $scope.class4 = "box-4";
+    };
+
 }]);
 
 portfolioApp.controller('projectsController', ['$scope', function($scope) {

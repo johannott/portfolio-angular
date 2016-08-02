@@ -139,9 +139,7 @@ p {
 -------------------------------------------------- */
 
 .home-column {
-  /*padding-top: 20px;*/
   padding-bottom: 50px;
-  /* background-color: white; */
   text-align: center;
 }
 
@@ -156,6 +154,17 @@ p {
 .home-column h1, h2, h3 {
   padding-bottom: 20px;
 }
+
+/* Home page CSS
+-------------------------------------------------- */
+
+
+.skills {
+  padding-top: 20px;
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 88vh; /* These two lines are counted as one :-)       */
+}
+
 
 /* Animated Icons
 -------------------------------------------------- */
@@ -300,4 +309,70 @@ p {
 .faa-parent.animated-hover:hover > .faa-tada.faa-slow {
   -webkit-animation: tada 3s linear infinite;
   animation: tada 3s linear infinite;
+}
+
+/* Skills Boxes */
+
+.small-box-1, .small-box-3 {
+  margin: 20px auto;
+  background: #A3D39C;
+  width: 50px;
+  height: 50px;
+}
+
+.small-box-1:hover, .small-box-3:hover {
+  background: #35404f;
+}
+
+.small-box-2, .small-box-4 {
+  margin: 20px auto;
+  background: #7ACCC8;
+  width: 50px;
+  height: 50px;
+}
+
+.small-box-2:hover, .small-box-4:hover {
+  background: #35404f;
+}
+
+.box-1, .box-3 {
+  margin: 20px auto;
+  background: #A3D39C;
+  width: 150px;
+  height: 150px;
+}
+.box-2, .box-4 {
+  margin: 20px auto;
+  background: #7ACCC8;
+  width: 150px;
+  height: 150px;
+}
+
+.box-1:hover, .box-2:hover, .box-3:hover, .box-4:hover {
+  background: #35404f;
+}
+
+.big-box-1, .big-box-3 {
+  transform: scale(1.5, 2);
+  transform-origin: top right;
+  background: #7ACCC8;
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+}
+.big-box-2, .big-box-4 {
+  transform: scale(2);
+  transform-origin: bottom left;
+  background: #A3D39C;
+  margin: 20px auto;
+  width: 130px;
+  height: 130px;
+}
+
+.big-box-1:hover, .big-box-2:hover, .big-box-3:hover, .big-box-4:hover {
+  background: #35404f;
+}
+
+.scale {
+  transition: all .5s ease-in-out;
 }
