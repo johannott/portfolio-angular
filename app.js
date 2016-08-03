@@ -41,34 +41,62 @@ portfolioApp.controller('homeController', ['$scope', function($scope) {
 portfolioApp.controller('skillsController', ['$scope', function($scope) {
   $scope.pageClass = 'page-skills';
 
-  $scope.class1 = "box-1";
-  $scope.class2 = "box-2";
-  $scope.class3 = "box-3";
-  $scope.class4 = "box-4";
-    $scope.changeClass1= function(){
-      if ($scope.class1 === "box-1")
-        $scope.class1 = "big-box-1";
-      else
-        $scope.class1 = "box-1";
-    };
-    $scope.changeClass2 = function(){
-      if ($scope.class2 === "box-2")
-        $scope.class2 = "big-box-2";
-      else
-        $scope.class2 = "box-2";
-    };
-    $scope.changeClass3 = function(){
-      if ($scope.class3 === "box-3")
-        $scope.class3 = "big-box-3";
-      else
-        $scope.class3 = "box-3";
-    };
-    $scope.changeClass4 = function(){
-      if ($scope.class4 === "box-4")
-        $scope.class4 = "big-box-4";
-      else
-        $scope.class4 = "box-4";
-    };
+  $scope.toggleClass1 = false;
+  $scope.toggleClass2 = false;
+  $scope.toggleClass3 = false;
+  $scope.toggleClass4 = false;
+  $scope.toggleClasses = function(num){
+    if (num === 1){
+      if (!$scope.toggleClass1) {
+        $scope.toggleClass1 = true;
+        $scope.toggleClass2 = false;
+        $scope.toggleClass3 = false;
+        $scope.toggleClass4 = false;
+      } else {
+        $scope.toggleClass1 = false;
+        $scope.toggleClass2 = false;
+        $scope.toggleClass3 = false;
+        $scope.toggleClass4 = false;
+      }
+    } else if (num === 2){
+      if (!$scope.toggleClass2) {
+        $scope.toggleClass1 = false;
+        $scope.toggleClass2 = true;
+        $scope.toggleClass3 = false;
+        $scope.toggleClass4 = false;
+      } else {
+        $scope.toggleClass1 = false;
+        $scope.toggleClass2 = false;
+        $scope.toggleClass3 = false;
+        $scope.toggleClass4 = false;
+      }
+    } else if (num === 3){
+      if (!$scope.toggleClass3) {
+        $scope.toggleClass1 = false;
+        $scope.toggleClass2 = false;
+        $scope.toggleClass3 = true;
+        $scope.toggleClass4 = false;
+      } else {
+        $scope.toggleClass1 = false;
+        $scope.toggleClass2 = false;
+        $scope.toggleClass3 = false;
+        $scope.toggleClass4 = false;
+      }
+    } else if (num === 4){
+      if (!$scope.toggleClass4) {
+        $scope.toggleClass1 = false;
+        $scope.toggleClass2 = false;
+        $scope.toggleClass3 = false;
+        $scope.toggleClass4 = true;
+      } else {
+        $scope.toggleClass1 = false;
+        $scope.toggleClass2 = false;
+        $scope.toggleClass3 = false;
+        $scope.toggleClass4 = false;
+      }
+    }
+  }
+
 
 }]);
 

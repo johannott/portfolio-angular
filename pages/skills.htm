@@ -1,34 +1,38 @@
 <div class="skills">
-  <div class="row">
+  <div class="row box-row">
     <div class="col-md-4">
-      <div class="small-box-1" ng-click="changeClass1()"></div>
+      <!-- <div class="small-box-1" ng-click="!toggleClass1 ? toggleClass1=true : toggleClass1=false"></div> -->
+      <div class="small-box-1" ng-click="toggleClasses(1)"></div>
     </div>
     <div class="col-md-8">
-      <div class="scale" ng-class="class1"></div>
+      <div class="scale" ng-class="!toggleClass1 ? 'box-1' : 'big-box-1'"></div>
     </div>
   </div>
-  <div class="row">
+  <div class="row box-row">
     <div class="col-md-8">
-        <div class="scale" ng-class="class2"></div>
+        <div class="scale" ng-class="!toggleClass2 ? 'box-2' : 'big-box-2'"></div>
     </div>
     <div class="col-md-4">
-      <div class="small-box-2" ng-click="changeClass2()"></div>
+      <div class="small-box-1" ng-click="toggleClasses(2)"></div>
+      <!-- <div class="small-box-2" ng-click="!toggleClass2 ? toggleClass2=true : toggleClass2=false"></div> -->
     </div>
   </div>
-  <div class="row">
+  <div class="row box-row">
     <div class="col-md-4">
-      <div class="small-box-3" ng-click="changeClass3()"></div>
+      <div class="small-box-1" ng-click="toggleClasses(3)"></div>
+      <!-- <div class="small-box-3" ng-click="!toggleClass3 ? toggleClass3=true : toggleClass3=false"></div> -->
     </div>
     <div class="col-md-8">
-      <div class="scale" ng-class="class3"></div>
+      <div class="scale" ng-class="!toggleClass3 ? 'box-3' : 'big-box-3'"></div>
     </div>
   </div>
-  <div class="row">
+  <div class="row box-row">
     <div class="col-md-8">
-      <div class="scale" ng-class="class4"></div>
+      <div class="scale" ng-class="!toggleClass4 ? 'box-4' : 'big-box-4'"></div>
     </div>
     <div class="col-md-4">
-      <div class="small-box-4" ng-click="changeClass4()"></div>
+      <div class="small-box-1" ng-click="toggleClasses(4)"></div>
+      <!-- <div class="small-box-4" ng-click="!toggleClass4 ? toggleClass4=true : toggleClass4=false"></div> -->
     </div>
   </div>
 </div>

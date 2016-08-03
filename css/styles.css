@@ -165,6 +165,10 @@ p {
   min-height: 88vh; /* These two lines are counted as one :-)       */
 }
 
+.box-row {
+  min-height: 220px;
+}
+
 
 /* Animated Icons
 -------------------------------------------------- */
@@ -322,6 +326,7 @@ p {
 
 .small-box-1:hover, .small-box-3:hover {
   background: #35404f;
+  cursor: pointer;
 }
 
 .small-box-2, .small-box-4 {
@@ -333,6 +338,7 @@ p {
 
 .small-box-2:hover, .small-box-4:hover {
   background: #35404f;
+  cursor: pointer;
 }
 
 .box-1, .box-3 {
@@ -353,24 +359,27 @@ p {
 }
 
 .big-box-1, .big-box-3 {
-  transform: scale(1.5, 2);
+  transform: scale(2);
   transform-origin: top right;
   background: #7ACCC8;
   margin: 20px auto;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
+  color: #35404f;
 }
 .big-box-2, .big-box-4 {
   transform: scale(2);
   transform-origin: bottom left;
   background: #A3D39C;
   margin: 20px auto;
-  width: 130px;
-  height: 130px;
+  width: 180px;
+  height: 180px;
+  color: #35404f;
 }
 
 .big-box-1:hover, .big-box-2:hover, .big-box-3:hover, .big-box-4:hover {
   background: #35404f;
+  color: #A3D39C;
 }
 
 .scale {
