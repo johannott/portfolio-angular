@@ -44,6 +44,9 @@ p {
 
 .navbar-default .navbar-brand {
     color: #A3D39C;  /* Chinook */
+    font-family: 'Graduate', Georgia, Times, serif;
+    font-size: 25px;
+    letter-spacing: 1.5px;
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -343,11 +346,6 @@ p {
   cursor: pointer;
 }
 
-.boxes {
-  display: flex;
-  justify-content: center;
-}
-
 h1.box-font {
   font-family: 'Graduate', Georgia, Times, serif;
   font-size: 35px;
@@ -363,6 +361,8 @@ h1.box-font {
   -webkit-box-shadow: 0 8px 6px -6px #35404f;
 	-moz-box-shadow: 0 8px 6px -6px #35404f;
 	box-shadow: 0 8px 6px -6px #35404f;
+  display: flex;
+  justify-content: center;
 }
 .box-2, .box-4 {
   margin: 20px auto;
@@ -373,6 +373,8 @@ h1.box-font {
   -webkit-box-shadow: 0 8px 6px -6px #35404f;
 	-moz-box-shadow: 0 8px 6px -6px #35404f;
 	box-shadow: 0 8px 6px -6px #35404f;
+  display: flex;
+  justify-content: center;
 }
 
 .box-1:hover, .box-2:hover, .box-3:hover, .box-4:hover {
@@ -417,7 +419,10 @@ h1.box-font {
 }
 
 .big-box-1 ul, .big-box-2 ul, .big-box-3 ul, .big-box-4 ul {
+  animation: 3s appear;
+  font-family: 'Graduate', Georgia, Times, serif;
   font-size: 16px;
+  list-style: square;
 }
 
 .box-1 ul, .box-2 ul, .box-3 ul, .box-4 ul {
@@ -426,4 +431,13 @@ h1.box-font {
 
 .scale {
   transition: all .5s ease-in-out;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
