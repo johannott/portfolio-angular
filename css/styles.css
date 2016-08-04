@@ -322,6 +322,7 @@ p {
   background: #A3D39C;
   width: 50px;
   height: 50px;
+  border-radius:5px;
 }
 
 .small-box-1:hover, .small-box-3:hover {
@@ -334,6 +335,7 @@ p {
   background: #7ACCC8;
   width: 50px;
   height: 50px;
+  border-radius:5px;
 }
 
 .small-box-2:hover, .small-box-4:hover {
@@ -341,21 +343,41 @@ p {
   cursor: pointer;
 }
 
+.boxes {
+  display: flex;
+  justify-content: center;
+}
+
+h1.box-font {
+  font-family: 'Graduate', Georgia, Times, serif;
+  font-size: 35px;
+  line-height: 100px;
+}
+
 .box-1, .box-3 {
   margin: 20px auto;
   background: #A3D39C;
   width: 150px;
   height: 150px;
+  border-radius:10px;
+  -webkit-box-shadow: 0 8px 6px -6px #35404f;
+	-moz-box-shadow: 0 8px 6px -6px #35404f;
+	box-shadow: 0 8px 6px -6px #35404f;
 }
 .box-2, .box-4 {
   margin: 20px auto;
   background: #7ACCC8;
   width: 150px;
   height: 150px;
+  border-radius:10px;
+  -webkit-box-shadow: 0 8px 6px -6px #35404f;
+	-moz-box-shadow: 0 8px 6px -6px #35404f;
+	box-shadow: 0 8px 6px -6px #35404f;
 }
 
 .box-1:hover, .box-2:hover, .box-3:hover, .box-4:hover {
   background: #35404f;
+  color: #A3D39C;
 }
 
 .big-box-1, .big-box-3 {
@@ -365,7 +387,11 @@ p {
   margin: 20px auto;
   width: 180px;
   height: 180px;
+  border-radius:10px;
   color: #35404f;
+  -webkit-box-shadow: 0 8px 6px -6px #35404f;
+	-moz-box-shadow: 0 8px 6px -6px #35404f;
+	box-shadow: 0 8px 6px -6px #35404f;
 }
 .big-box-2, .big-box-4 {
   transform: scale(2);
@@ -374,12 +400,28 @@ p {
   margin: 20px auto;
   width: 180px;
   height: 180px;
+  border-radius:10px;
   color: #35404f;
+  -webkit-box-shadow: 0 8px 6px -6px #35404f;
+	-moz-box-shadow: 0 8px 6px -6px #35404f;
+	box-shadow: 0 8px 6px -6px #35404f;
 }
 
 .big-box-1:hover, .big-box-2:hover, .big-box-3:hover, .big-box-4:hover {
   background: #35404f;
   color: #A3D39C;
+}
+
+.big-box-1 h1, .big-box-2 h1, .big-box-3 h1, .big-box-4 h1 {
+  display: none;
+}
+
+.big-box-1 ul, .big-box-2 ul, .big-box-3 ul, .big-box-4 ul {
+  font-size: 16px;
+}
+
+.box-1 ul, .box-2 ul, .box-3 ul, .box-4 ul {
+  display: none;
 }
 
 .scale {
