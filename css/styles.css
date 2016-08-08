@@ -441,3 +441,37 @@ h1.box-font {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 1024px) {
+
+  .hide-small {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .big-box-size {
+    width: 150px;
+    height: 150px;
+  }
+
+  .big-box-size ul {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .big-box-size {
+    width: 180px;
+    height: 180px;
+  }
+
+  .big-box-size ul {
+    font-size: 16px;
+  }
+
+}
