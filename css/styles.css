@@ -48,6 +48,9 @@ p {
     font-size: 25px;
     letter-spacing: 1.5px;
 }
+.navbar-default .navbar-brand:focus {
+    color: #A3D39C;  /* Chinook */
+}
 
 .navbar-default .navbar-nav>li>a{
     color: #A3D39C;  /* Chinook */
