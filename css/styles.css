@@ -496,7 +496,7 @@ h1.box-font {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-device-width: 1024px) {
 
   .hide-small {
     display: none;
@@ -504,7 +504,7 @@ h1.box-font {
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-device-width: 1024px) {
 
   .hide-big {
     display: none;
