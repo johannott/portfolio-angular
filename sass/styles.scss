@@ -562,11 +562,18 @@ h1.box-font {
   bottom:0;
 }
 
-.animate-switch.ng-leave.ng-leave-active,
 .animate-switch.ng-enter {
-  top:-50px;
+  left: 100%;
 }
-.animate-switch.ng-leave,
+
+.animate-switch.ng-leave.ng-leave-active {
+  left: -100%;
+}
+
+.animate-switch.ng-leave {
+  left: 0;
+}
+
 .animate-switch.ng-enter.ng-enter-active {
-  top:0;
+  left: 0;
 }

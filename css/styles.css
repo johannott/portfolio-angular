@@ -277,10 +277,9 @@ p {
   width: 50px;
   height: 50px;
   border-radius: 5px; }
-
-.small-box-1:hover, .small-box-3:hover {
-  background: #35404f;
-  cursor: pointer; }
+  .small-box-1:hover, .small-box-3:hover {
+    background: #35404f;
+    cursor: pointer; }
 
 .small-box-2, .small-box-4 {
   margin: 20px auto;
@@ -288,10 +287,9 @@ p {
   width: 50px;
   height: 50px;
   border-radius: 5px; }
-
-.small-box-2:hover, .small-box-4:hover {
-  background: #35404f;
-  cursor: pointer; }
+  .small-box-2:hover, .small-box-4:hover {
+    background: #35404f;
+    cursor: pointer; }
 
 h1.box-font {
   font-family: 'Graduate', Georgia, Times, serif;
@@ -378,14 +376,12 @@ h1.box-font {
   -webkit-box-shadow: 0 8px 6px -6px #35404f;
   -moz-box-shadow: 0 8px 6px -6px #35404f;
   box-shadow: 0 8px 6px -6px #35404f; }
-
-.small-screen-box:hover {
-  animation: 1s hover; }
-
-.small-screen-box ul {
-  list-style-type: none;
-  font-family: 'Graduate', Georgia, Times, serif;
-  font-size: 24px; }
+  .small-screen-box:hover {
+    animation: 1s hover; }
+  .small-screen-box ul {
+    list-style-type: none;
+    font-family: 'Graduate', Georgia, Times, serif;
+    font-size: 24px; }
 
 .scale {
   transition: all .5s ease-in-out; }
@@ -443,10 +439,14 @@ h1.box-font {
   right: 0;
   bottom: 0; }
 
-.animate-switch.ng-leave.ng-leave-active,
 .animate-switch.ng-enter {
-  top: -50px; }
+  left: 100%; }
 
-.animate-switch.ng-leave,
+.animate-switch.ng-leave.ng-leave-active {
+  left: -100%; }
+
+.animate-switch.ng-leave {
+  left: 0; }
+
 .animate-switch.ng-enter.ng-enter-active {
-  top: 0; }
+  left: 0; }
