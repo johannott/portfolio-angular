@@ -420,33 +420,13 @@ h1.box-font {
   .big-box-size ul {
     font-size: 16px; } }
 
-/* Projects Page CSS */
-.animate-switch-container {
-  position: relative;
-  background: white;
-  border: 1px solid black;
-  height: 40px;
-  overflow: hidden; }
-
-.animate-switch {
-  padding: 10px; }
-
-.animate-switch.ng-animate {
-  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-
-.animate-switch.ng-enter {
-  left: 100%; }
-
-.animate-switch.ng-leave.ng-leave-active {
-  left: -100%; }
-
-.animate-switch.ng-leave {
-  left: 0; }
-
-.animate-switch.ng-enter.ng-enter-active {
-  left: 0; }
+/* Projects CSS
+-------------------------------------------------- */
+.projects {
+  padding-top: 20px;
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 88vh;
+  /* These two lines are counted as one :-)       */
+  background-color: #FFF;
+  /* Gallery */ }
