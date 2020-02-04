@@ -1,3 +1,16 @@
 <div class="col-md-6 col-md-offset-3">
-Under Construction...
+  <div class="">
+    <button class="btn btn-default btn-sm" ng-click="selection='connections'">Connections</button>
+    <button class="btn btn-default btn-sm" ng-click="selection='verse'">Verse</button>
+    <button class="btn btn-default btn-sm" ng-click="selection='orient'">Orient</button>
+    <button class="btn btn-default btn-sm" ng-click="selection='bluepedia'">Bluepedia</button>
+  </div>
+  <hr/>
+  <div class="animate-switch-container"
+    ng-switch on="selection">
+      <div class="animate-switch" ng-switch-when="connections">Connections</div>
+      <div class="animate-switch" ng-switch-when="verse">Verse</div>
+      <div class="animate-switch" ng-switch-when="orient">Orient</div>
+      <div class="animate-switch" ng-switch-when="bluepedia">Bluepedia</div>
+  </div>
 </div>

@@ -1,0 +1,24 @@
+{
+  "name": "jo-portfolio-angular",
+  "version": "1.0.0",
+  "description": "Johann Ott Portfolio",
+  "main": "app.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johannott/portfolio-angular.git"
+  },
+  "author": "Johann Ott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johannott/portfolio-angular/issues"
+  },
+  "homepage": "https://github.com/johannott/portfolio-angular#readme"
+}

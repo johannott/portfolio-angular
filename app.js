@@ -102,6 +102,7 @@ portfolioApp.controller('skillsController', ['$scope', function($scope) {
 
 portfolioApp.controller('projectsController', ['$scope', function($scope) {
   $scope.pageClass = 'page-projects';
+  $scope.selection = 'connections';
 }]);
 
 portfolioApp.controller('interestsController', ['$scope', function($scope) {
